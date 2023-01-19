@@ -3,7 +3,6 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    text-decoration: none;
     list-style: none;
 }
 :root{
@@ -37,6 +36,7 @@ header{
 .logo{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo i{
@@ -50,24 +50,24 @@ header{
     font-size: 1.7rem;
     font-weight: 600;
 }
-.navbar {
+.mynavbar {
     display: flex;
-    
+    align-items: center;
 }
 
-.navbar a{
+.mynavbar a{
     color: var(--text-color);
     font-size: 1.1rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0px 10px;
     transition: all .50s ease;
-    
+    text-decoration: none;
 }
-.navbar a:hover{
+.mynavbar a:hover{
     color: var(--main-color);
 }
-.nevbar a.active{
+.mynavbar a.active{
     color: var(--main-color)
 }
 
@@ -89,6 +89,10 @@ header{
     display: flex;
     align-items: center;
     color: var(--text-color);
+    text-decoration: none;
+}
+.user:hover{
+    color: var(--main-color);
 }
 .user i{
     color: var(--main-color);
@@ -113,17 +117,18 @@ header{
         transition: .2s;
         height: 80px;
     }
-    .navbar a{
+    .mynavbar a{
         padding: 5px 0;
         margin:0px 10px;
 
     }
+
 }
 @media (max-width:1080px){
     #menu-icon{
         display: block;
     }
-    .navbar{
+    .mynavbar{
         position:absolute;      
         width: 270px;
         height:39vh;
@@ -134,21 +139,21 @@ header{
         border-radius: 10px;
         transition: all .50s ease;
     }
-    .navbar a{
+    .mynavbar a{
         display: block;
         margin: 12px 0;
         padding: 0px 25px;
         transition: all 0.50s ease;
     }
-    .navbar a:hover{
+    .mynavbar a:hover{
         color:var(--text-color);
         transform: translateY(5px);
     }
 
-    .navbar a.active{
+    .mynavbar a.active{
         color: var(--text-color);
     }
-    .navbar.open{
+    .mynavbar.open{
         top: 100%;
         display: flex;
 
@@ -157,9 +162,5 @@ header{
         position:relative;
         display: flex;
         align-items: center;
-    }
-
-    header{
-        height: 80px
     }
 }
